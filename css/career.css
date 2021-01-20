@@ -1,0 +1,240 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+}
+#career{
+    overflow: hidden;
+}
+#Business_banners {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient( rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../images/opportunity.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+.fa {
+    color: #fff;
+}
+.CSR_content {
+    text-align: center;
+    color: #fff;
+    margin-top: 35vh;
+}
+
+.CSR_content h1 {
+    font-weight: bolder;
+}
+
+#CSR_about {
+    margin-top: 15vh;
+    min-height: 50vh;
+}
+
+
+.CRS_LB {
+    font-size: 13px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+@media (min-width: 1200px) {
+    .CSR_radius_top_left {
+        border-top-left-radius: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .CSR_radius_top_right {
+        border-top-right-radius: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .CSR_radius_bottom_left {
+        border-bottom-left-radius: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .CSR_radius_bottom_right {
+        border-bottom-right-radius: 50%;
+    }
+}
+
+.icon-background1 {
+    color: rgba(255, 0, 25, 0.748);
+}
+
+.icon-background2 {
+    color: #a99710;
+}
+
+.icon-background3 {
+    color: #1a2786;
+}
+
+.icon-background4 {
+    color: red;
+}
+
+.icon-background5 {
+    color: #03a9f4;
+}
+
+.icon-background6 {
+    color: #8bf78b;
+}
+
+.icon-background7 {
+    color: #0f3959;
+}
+
+.icon-background8 {
+    color: #0f3959;
+}
+.icon-background9 {
+    color: #0f5924;
+}
+.icon-background10 {
+    color: #1e0924;
+}
+.icon-background11 {
+    color: #0f5459;
+}
+.icon-background12 {
+    color: #1d0f59;
+}
+.icon-background13 {
+    color: #592d0f;
+}
+.icon-background14 {
+    color: #55590f;
+}
+.icon-background15 {
+    color: #b6b5ff;
+}
+
+
+/* Promotion */
+.section{
+    padding: 10rem 0 5rem 0;
+}
+
+.section .title{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.section .title h2{
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.section .title span{
+    color: var(--grey2);
+}
+
+.promotion-layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.promotion-item{
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.promotion-item img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: all 500ms ease-in-out;
+}
+
+.promotion-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    text-align: center;
+    z-index: 3;
+}
+
+.promotion-content h3{
+    background-color: rgba(0,0,0,0.8);
+    border-radius: 5rem;
+    padding: 0.7rem 1.4rem;
+    font-size: 1.7rem;
+    font-weight: inherit;
+    margin-bottom: 1rem;
+    transition: all 500ms ease-in-out;
+}
+
+.promotion-content a{
+    transition: all 500ms ease-in-out;
+    font-size: 1.4rem;
+}
+
+.promotion-content a:hover{
+    transition: var(--primary);
+}
+
+.promotion-item:hover .promotion-content h3{
+    background-color: #fff;
+    color: var(--black);
+}
+
+.promotion-item:hover img{
+    transform: scale(1.2);
+}
+
+.promotion-item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 500ms ease-in-out;
+}
+
+.promotion-item:hover::after{
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (max-width: 1200px){
+    .promotion-content h3{
+        font-size: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 996px){
+    .promotion-layout{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 567px){
+    .promotion-layout{
+        grid-template-columns: 1fr;
+    }
+}
+
